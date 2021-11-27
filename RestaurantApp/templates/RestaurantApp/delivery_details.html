@@ -1,0 +1,67 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+{% if d %}
+<div class="container">
+    <div class="container">
+        <div class="card">
+            <div class="card-header">For API details @ <a href="/latest">Click here</a></div>
+            <br>
+            <div class="card-info text-center" style="color: Blue;">
+                <div class="row">
+                    <div class="col-1">
+                        
+                    </div>
+
+                    <div class="col-8"><br>
+                        <h4 style="text-align: left;">Selected Details</h4> <br>
+                        <table class="table table-bordered table-secondary border-info ">
+                            
+                            <tr>
+                                <td>Delivery Id</td>
+                                <td>{{d.id}}</td>
+                            </tr>
+                            <tr>
+                                
+                                <td>Bot Id</td>
+                                <td>{{d.bot_id}}</td>
+                            </tr>
+                            <tr>
+                                <td>Bot Name</td>
+                                <td>{{d.bot_name}}</td>
+                            </tr>
+                             <tr>
+                                <td>Bot Color</td>
+                                <td>{{d.bot_color}}</td>
+                            </tr>
+        
+                            <tr>
+                                <td>Table No</td>
+                                <td>{{d.table_no}}</td>
+                            </tr>
+                            
+        
+                        </table><br>
+
+                    </div>
+                    <div class="col-3">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+</div>
+{% endif %}
+{% endblock %}
+
+
+{% block js %}
+	<script>
+         setTimeout(function(){
+            window.location.href = 'http://127.0.0.1:8000/bots';
+         }, 2000);
+      </script>
+{% endblock %}

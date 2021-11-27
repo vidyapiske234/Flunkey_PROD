@@ -1,0 +1,60 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="container"><br><br>
+    <form method = "POST">
+        {% csrf_token %}
+        <div class="form-row">
+            <div class="container">
+                <h4>You have Selected the Following Options, Click confirm to serve the food.</h4>                
+                <br><br>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-1">
+                       </div>
+                       <div class="col-8">
+                        <table class="table table-bordered table-secondary border-primary">                      
+                            <tbody>
+                             
+                              <tr>
+                                <td>Bot id</td>
+                                <td class= "text-center">{{t.bot_id}}</td>
+                                
+                              </tr>
+                              <tr>
+                                <td>Bot Name</td>
+                                <td class= "text-center">{{t.bot_name}}</td>
+                               
+                              </tr>
+                              <tr>
+                                <td>Bot Color</td>
+                                <td class= "text-center">{{t.bot_color}}</td>
+                               
+                              </tr>
+      
+                              <tr>
+                                  <td>Table No</td>
+                                  <td class= "text-center">{{t.table_no}}</td>
+                              </tr>         
+                            </tbody>               
+
+        
+                          </table> <br>
+
+                          <button type="submit" class = "btn btn-md btn-warning">Confirm ?</button><br><br>
+                          <a href="{% url 'BotsApp:bots-list' %}" class = "btn btn-md btn-danger">Cancel</a>
+
+                        </form>
+                    </div>
+                    <div class="col-3">                            
+                    </div>
+                    </div>                             
+                   
+                  </div>
+            </div>
+        </div>
+
+        <br>
+        
+</div><br><br>
+{% endblock %}
