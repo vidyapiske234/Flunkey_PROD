@@ -1,5 +1,6 @@
 from django.shortcuts import render
 from RestaurantApp.models import Delivery, Table
+from AccountsApp.models import CustomUser as User
 from BotsApp.models import Bot
 from rest_framework.decorators import api_view
 from rest_framework.response import Response
@@ -61,5 +62,11 @@ def DeliveryStatusView(request, id):
         serializer.save()
     return Response(serializer.data)
 
-    
+#... Restaurant Based lates Data..........
+@api_view(['GET'])
+def RestLatestView(request, username):
+    user = User.objects.get(username = username)
+    d = Delivery.objects.filter(username = username).latest('pk')
+    serializer = DeliverySerializer(d, many = False)
+    return Response(serializer.data)
 

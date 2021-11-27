@@ -47,24 +47,46 @@
 
             <div class="container"><br>
                 <h5>Want Reports for custom Dates. Please select Dates Here...</h5><br>
-                <div class="container form-group mb-2">
-                    <form method = "POST" class = "form-inline">
-                        {% csrf_token %}
-                        <div class="form-row">
-                            <div class="form-group col-md-4">
-                                <b><label for="">From Date</label></b>
-                                <input class = "form-control" type="date" name = "startdate"> <br>
+                <div class="row">
+                    <div class="col-8">
+                        <div class="container form-group mb-2">
+                            <form method = "POST" class = "form-inline">
+                                {% csrf_token %}
+                                <div class="form-row">
+                                    <div class="form-group col-md-9">
+                                        <b><label for="">From Date</label></b>
+                                        <input class = "form-control" type="date" name = "startdate"> <br>
 
-                            </div>
-                            <div class="form-group col-md-4">
-                                <b><label for="">To Date</label></b>
-                                <input class = "form-control" type="date" name = "enddate"> <br>
-                            </div>
-                            <div class="form-group col-md-4">
-                                <button type="submit" class = "btn btn-md btn-primary">Get Reports</button>
+                                    </div>
+                                    <div class="form-group col-md-9">
+                                        <b><label for="">To Date</label></b>
+                                        <input class = "form-control" type="date" name = "enddate"> <br>
+                                    </div>
+                                    <div class="form-group col-md-4">
+                                        <button type="submit" class = "btn btn-md btn-primary">Get Reports</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                <div class="col-md-4">
+                    {% if d_post %} 
+                        <h6>From <span style="color: orangered;">{{startdate}}</span> to <span style="color: orangered;">{{enddate}}</span></h6><br>
+                        <div class="col-md-12">
+                            <div class="card-counter success">
+                                <i class="fa fa-ticket"></i>
+                                <span class="count-numbers">{{d_post}}</span>
+                                <span class="count-name">Orders Delivered</span>
                             </div>
                         </div>
-                    </form>
+                    {% else %}
+                        <!-- <h5>No Deliveries Found</h5> -->
+
+                    {% endif %}
+
+                    <br><br>
+                    
+                </div>
                 </div>
 
             </div>
