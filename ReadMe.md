@@ -4,6 +4,6 @@
 
 ** To fetch the latest delivery **
 
->_/api/<usernaem>/latest _
+> /api/<username>>/latest 
 
 
