@@ -2,5 +2,8 @@
 
 ## API DETIALS
 
-### To fetch the latest delivery 
+** To fetch the latest delivery **
+
+>_ /api/<usernaem>/latest _
+
 
