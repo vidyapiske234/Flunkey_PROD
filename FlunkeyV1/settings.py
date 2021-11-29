@@ -25,7 +25,7 @@ SECRET_KEY = 'sx7d+5&c-+jbne)-k04@22qy413qsp8v00*tnm__d((7t8wayt'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # USER MODEL
