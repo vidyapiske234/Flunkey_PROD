@@ -29,6 +29,8 @@
 
 >_Adding Restaurnats and Users_
 
+>_Detailed Dashboards_
+
 >_Restaurnat wise reports_
 
 >_Bot wise Reports_
