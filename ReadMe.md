@@ -19,6 +19,9 @@
 **To Update Table Status**
 >_/api/update-table/table-no_
 
+**To Update Food Delivery**
+>-/api/delivery-status/id_of_the_delivery
+
 
 
 
