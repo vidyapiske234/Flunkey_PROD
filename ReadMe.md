@@ -25,16 +25,25 @@
 
 ## FEATURES
 
-**Adding new Restaurant **
+**Adding new Restaurant**
 >_Adding Restaurnats and Users_
+
 >_Bot selection_
+
 >_Table Selection_
+
 >_Restaurant wise latest api data API_
+
 >_Restaurant latest data API_
+
 >_Bot status update API_
+
 >_Bot battery update API_
+
 >_Table update API_
+
 >_Food delivery status update API_
+
 
 
 
