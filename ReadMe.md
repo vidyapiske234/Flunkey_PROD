@@ -4,20 +4,20 @@
 
 ** To fetch the latest delivery based on the restaurant **
 
-> /api/user-name/latest 
+>_/api/user-name/latest_
 
 ** To fetch the latest delivery for all restaurants  **
-> /api/latest/
+>_/api/latest/_
 
-** To update Bot status **
+**To update Bot status**
 > /api/update-bot/bot-no
 
 
-** To Update Bot Battery **
-> /api/update-battery/bot-no
+**To Update Bot Battery**
+>_/api/update-battery/bot-no_
 
-** Toi Update Table Status **
-> /api/update-table/table-no
+**To Update Table Status**
+>_/api/update-table/table-no_
 
 
 
