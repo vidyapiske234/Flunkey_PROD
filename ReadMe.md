@@ -2,11 +2,11 @@
 
 ## API DETIALS
 
-** To fetch the latest delivery based on the restaurant **
+**To fetch the latest delivery based on the restaurant**
 
 >_/api/user-name/latest_
 
-** To fetch the latest delivery for all restaurants  **
+**To fetch the latest delivery for all restaurants**
 >_/api/latest/_
 
 **To update Bot status**
