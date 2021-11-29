@@ -26,7 +26,12 @@
 ## FEATURES
 
 **Adding new Restaurant**
+
 >_Adding Restaurnats and Users_
+
+>_Restaurnat wise reports_
+
+>_Bot wise Reports_
 
 >_Bot selection_
 
