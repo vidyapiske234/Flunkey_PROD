@@ -70,7 +70,7 @@ TEMPLATES = [
             os.path.join(BASE_DIR, 'AccountsApp', 'templates'),
             os.path.join(BASE_DIR, 'RestaurantApp', 'templates'),
             os.path.join(BASE_DIR, 'BotsApp', 'templates'),
-            os.path.join(BASE_DIR, 'DashBoardApp', 'templates')
+            os.path.join(BASE_DIR, 'DashboardApp', 'templates')
         ],
         'APP_DIRS': True,
         'OPTIONS': {

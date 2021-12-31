@@ -29,7 +29,7 @@ class Table(models.Model):
     updated_at = models.DateTimeField(auto_now = True)
 
     class Meta:
-        ordering = ('-id',)
+        ordering = ('table_no',)
         verbose_name = 'Table'
         verbose_name = 'Tables'
 

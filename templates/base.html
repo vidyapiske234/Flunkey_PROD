@@ -53,13 +53,13 @@
     <div class="container d-flex align-items-center justify-content-between">
 
     
-      <a href=""><img src="/static{{rest.rest_logo.url}}" alt="{{rest.rest_name}}"></a>      
+      <a href="{% url 'BotsApp:bots-list' %}"><img src="/static{{rest.rest_logo.url}}" alt="{{rest.rest_name}}"></a>      
      
       <nav id="navbar" class="navbar">
         <ul>
-          <li><a class="nav-link scrollto " href="">Home</a></li>        
+          <li><a class="nav-link scrollto " href="{% url 'BotsApp:bots-list' %}">Home</a></li>        
           <li><a class="nav-link scrollto " href="{% url 'DashboardApp:dashboard' %}">Dashboard</a></li>
-          <li><a class="nav-link scrollto " href="">Map</a></li>
+     {% comment %}     <li><a class="nav-link scrollto " href="">Map</a></li>{% endcomment %}
           <li><a class="nav-link scrollto end-button" href="{% url 'RestaurantApp:end-today' %}">End-Today</a></li>
           <li><a href="{% url 'AccountsApp:logout' %}" class="nav-link scrollto ">Logout</a></li>
         </ul>

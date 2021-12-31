@@ -14,8 +14,16 @@
             <div class="col-sm-2">
                 <div class="card">
                 <a href="{% url 'RestaurantApp:select-table' i.id%}">
-                   <div class="card-header text-center">
-                        <h6><b><span style="color: green;">Table - {{i.table_no}}</span></b></h6>
+                   <div class="card-header text-center">			
+                        <h6><b>
+                            {% if i.table_no|length > 2%}                            
+                            <span style="color: rgb(124, 0, 128);">Table - {{i.table_no}}</span>
+                            {% else %}
+                            <span style="color: rgb(62, 128, 0);">Table - {{i.table_no}}</span>
+                            {% endif %}
+
+                            
+                        </b></h6>
                     </div></a>
                    
                 </div><br>
